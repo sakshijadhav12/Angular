@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <meta charset ="Utf8"></meta>
+    <meta name="viewport " content ="width=device-width"></meta>
+    <title>Registration</title>
+</head>
+<body>
+<h1>Create your google Account</h1>
+
+<form [formGroup]="createAccountForm" (submit)="onSubmit()">
+  <input formControlName="email" type="email" placeholder="Email address">
+  <input formControlName="password" type="password" placeholder="Password">
+  <input formControlName="confirmPassword" type="password" placeholder="Confirm password">
+  <button type="submit">Create account</button>
+</form>
+</body>
